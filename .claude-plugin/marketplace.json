@@ -1,0 +1,25 @@
+{
+  "name": "long-story-short",
+  "description": "Long story short, by Pierre-Olivier Carles.",
+  "owner": {
+    "name": "Pierre-Olivier Carles",
+    "url": "https://github.com/pocarles"
+  },
+  "plugins": [
+    {
+      "name": "long-story-short",
+      "description": "Ends your agent's replies with 10 plain lines on where things stand and the one next step.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Pierre-Olivier Carles",
+        "url": "https://github.com/pocarles"
+      },
+      "homepage": "https://github.com/pocarles/long-story-short",
+      "repository": "https://github.com/pocarles/long-story-short",
+      "license": "MIT",
+      "source": "./",
+      "strict": false,
+      "skills": ["./"]
+    }
+  ]
+}
