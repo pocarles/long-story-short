@@ -82,7 +82,7 @@ npx skills add pocarles/long-story-short -g
 
 **Claude.ai**
 
-[![Download for Claude.ai](https://img.shields.io/badge/Download-for%20Claude.ai-D97757?style=for-the-badge)](https://github.com/pocarles/long-story-short/releases/download/v1.0.0/long-story-short.zip)
+[![Download for Claude.ai](https://img.shields.io/badge/Download-for%20Claude.ai-D97757?style=for-the-badge)](https://github.com/pocarles/long-story-short/releases/latest/download/long-story-short.zip)
 
 Then upload the zip in Settings, under Capabilities, Skills.
 
