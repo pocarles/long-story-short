@@ -20,10 +20,11 @@ It looks like this:
 
 > **Long story short**
 >
-> The login bug is fixed: expired sessions now send you back to the sign-in page instead of a
-> blank screen. I reproduced it first, then fixed it, and the new test fails without the fix.
+> The login bug is fixed: when a session runs out, you now land back on the sign-in page instead
+> of a blank screen. I broke it on purpose to confirm the fix is what solves it, and a check now
+> catches it if it ever comes back.
 >
-> Not checked yet: the mobile app, which uses its own session code.
+> Not checked yet: the mobile app. It handles logins on its own, so it may have the same bug.
 >
 > **Next:** check the mobile app for the same bug. It shares the cause, so it likely has it too.
 
@@ -39,6 +40,8 @@ It looks like this:
   email or spends money, the line says so before you approve it.
 - **No stopping halfway.** If the agent still owes you work, it does that work first. The block
   can't become a polite way to quit early.
+- **Finished sessions get closed.** When a task is done and nothing would be lost, the next step
+  is archiving the session, so your list only shows work that is still alive.
 
 ## A word on models
 
@@ -79,7 +82,7 @@ npx skills add pocarles/long-story-short -g
 
 **Claude.ai**
 
-[![Download for Claude.ai](https://img.shields.io/badge/Download-for%20Claude.ai-D97757?style=for-the-badge)](https://github.com/pocarles/long-story-short/releases/download/v1.0.0/long-story-short.zip)
+[![Download for Claude.ai](https://img.shields.io/badge/Download-for%20Claude.ai-D97757?style=for-the-badge)](https://github.com/pocarles/long-story-short/releases/latest/download/long-story-short.zip)
 
 Then upload the zip in Settings, under Capabilities, Skills.
 
@@ -96,5 +99,7 @@ Then upload the zip in Settings, under Capabilities, Skills.
   permissions: your tool's own settings still decide what it may do.
 - The block follows your language. Write in French, get it in French.
 - In the Claude desktop app, the next-step box offers the same task, with a button that starts it.
+- In the Codex app, it can archive a finished session and its worktree for you, and turn a
+  decision into choices you click.
 
 MIT license. Made by [Pierre-Olivier Carles](https://github.com/pocarles).
