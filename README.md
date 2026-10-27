@@ -20,20 +20,19 @@ It looks like this:
 
 > **Long story short**
 >
-> The login bug is fixed: when a session runs out, you now land back on the sign-in page instead
-> of a blank screen. I broke it on purpose to confirm the fix is what solves it, and a check now
-> catches it if it ever comes back.
+> The login bug is fixed. When a session runs out, you now land on the sign-in page, not a blank
+> screen. A check will catch it if it ever comes back.
 >
-> Not checked yet: the mobile app. It handles logins on its own, so it may have the same bug.
+> Not checked: the mobile app. It handles logins on its own, so it may have the same bug.
 >
-> **Next:** check the mobile app for the same bug. It shares the cause, so it likely has it too.
+> **Next:** check the mobile app for the same bug. It likely shares the cause.
 
 ## What it changes
 
 - **You're back in a session in seconds.** Your attention goes to the decision, not to rereading
   the whole reply.
-- **Plain words.** Technical terms get explained, and anything risky or unchecked stays in the
-  summary instead of getting buried in the details.
+- **Plain words.** Short sentences, no codes or ticket numbers, few numbers, and technical terms
+  explained. Anything risky or unchecked stays in the summary instead of getting buried.
 - **One next step, not a menu.** You don't pick between five options. "Do it" is enough to keep
   going.
 - **Your "Do it" means what you think it means.** If the next step deploys to production, sends an
@@ -98,7 +97,8 @@ Then upload the zip in Settings, under Capabilities, Skills.
 - "Do it" approves the Next line as written, nothing more. The skill gives your agent no new
   permissions: your tool's own settings still decide what it may do.
 - The block follows your language. Write in French, get it in French.
-- In the Claude desktop app, the next-step box offers the same task, with a button that starts it.
+- In the Claude desktop app, every Next line also comes as a question in the next-step box, with a
+  button that starts it.
 - In the Codex app, it can archive a finished session and its worktree for you, and turn a
   decision into choices you click.
 
