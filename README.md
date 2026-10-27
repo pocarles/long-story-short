@@ -20,21 +20,24 @@ It looks like this:
 
 > **Long story short**
 >
-> The login bug is fixed. When a session runs out, you now land on the sign-in page, not a blank
-> screen. A check will catch it if it ever comes back.
+> The login bug is fixed. When someone stays away too long, they now land on the sign-in page
+> instead of a blank screen. A check will catch it if it ever comes back.
 >
-> Not checked: the mobile app. It handles logins on its own, so it may have the same bug.
+> Not checked: the mobile app. It handles logins on its own, like a second door with its own
+> lock, so it may have the same bug.
 >
-> **Next:** check the mobile app for the same bug. It likely shares the cause.
+> **Next:** check the mobile app for the same bug. It likely shares the cause, and checking
+> changes nothing for your users.
 
 ## What it changes
 
 - **You're back in a session in seconds.** Your attention goes to the decision, not to rereading
   the whole reply.
-- **Plain words.** Short sentences, no codes or ticket numbers, few numbers, and technical terms
-  explained. Anything risky or unchecked stays in the summary instead of getting buried.
+- **Explained, not reported.** Like a colleague over coffee: what happened, what it means for you,
+  in short sentences with no codes or jargon. Anything risky or unchecked stays in the summary.
 - **One next step, not a menu.** You don't pick between five options. "Do it" is enough to keep
   going.
+  The line says why it comes now and what saying yes will change.
 - **Your "Do it" means what you think it means.** If the next step deploys to production, sends an
   email or spends money, the line says so before you approve it.
 - **No stopping halfway.** If the agent still owes you work, it does that work first. The block
