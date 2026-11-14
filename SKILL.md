@@ -26,7 +26,7 @@ or short bullets for 3+ items>
 **Next:** <one task>. <why it comes now, and what saying yes changes for them>.
 ```
 
-- Aim for 4 to 8 lines, about 60 to 100 words. Never more than 10 lines.
+- Keep it short enough to take in at a glance, usually a handful of lines.
 - Plain beats short. If explaining a point takes one more line, use it. Cut a point before you
   cut its explanation.
 - Blank line between every paragraph. Bold only the two labels.
@@ -44,7 +44,7 @@ or short bullets for 3+ items>
 - **Translate developer words.** Repo, branch, commit, pull request, merge, deploy, worktree,
   migration, API, cache and the like: swap them for what they do ("put it up for review", "make
   it live", "a separate copy to work in"), or explain them in a few words the first time. A word
-  counts as plain only if the user wrote it themselves. Words from a button message, a plan or
+  counts as plain only if the user wrote it themselves. Words from a button label, a plan or
   any other text you wrote don't count, even when it was sent in the user's name.
 - **Short sentences.** One idea per sentence, about 15 words at most. Don't chain clauses with
   "while", "because", "so" and "which" in one sentence: split it.
@@ -147,19 +147,22 @@ Revenue shows too little. Nothing else changes.
 The next-step box (`wrap_up`) is called before your closing message, so decide the Next line
 first, then call the box, then write the reply and the block.
 
-- **Whenever the block has a Next line, the box must carry a question and a button for it**, even
-  when the task you were asked to do is finished. Next is always something the user has to approve,
-  so it is always pending. A box with only a recap shows no button: that is the bug to avoid.
-- The box's text follows the same rules as the block: plain words, no codes, no developer words.
-  Its recap says where things stand in one or two sentences. Don't make it a third, more
-  technical copy of the block.
+- **Whenever the block has a Next line, the box carries it as a question with buttons**, even
+  when the task you were asked to do is finished. Next is always something the user has to
+  approve, so it is always pending. A box with only a recap shows no button: that is the bug to
+  avoid.
 - `ask`: the Next line as a short yes-or-no question in the same plain words, e.g. "Fix the price
-  of the Dupont order?".
-- First button: the app `action` when one fits (commit, open a PR, merge, archive). Otherwise a
-  reply button labeled "Do it" whose `message` is the full task as an instruction to you, with
-  the exact names and numbers you'll need (codes are fine there). Keep it under 300 characters:
-  the app cuts longer ones. The message is never empty or just "Do it".
-- A second "Not now" button is fine. Never a menu of other tasks.
+  of the Dupont order?" (100 characters at most).
+- **First button: the obvious answer, the one that says yes to Next**, so one click sends it. For
+  commit, open a PR, merge or archive, use the app `action`. Otherwise a reply button whose label
+  is that yes in one to three words ("Do it", "Fix it", "Yes, merge"). A click sends the label
+  itself as the user's reply, nothing more, so it must read as a clear answer to the question.
+  It approves the Next line exactly as written, so the Next line already names the task in full.
+- A second button only for a realistic alternative: "Not now", or the other side of a decision.
+  Never a menu of other tasks.
+- The box's recap follows the same rules as the block: plain words, no codes, no developer
+  words, where things stand in one or two sentences. Don't make it a third, more technical copy
+  of the block.
 - No Next line (a question answered, nothing to do): recap only, no question.
 
 ## Codex app

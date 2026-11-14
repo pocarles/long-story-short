@@ -100,8 +100,8 @@ Then upload the zip in Settings, under Capabilities, Skills.
 - "Do it" approves the Next line as written, nothing more. The skill gives your agent no new
   permissions: your tool's own settings still decide what it may do.
 - The block follows your language. Write in French, get it in French.
-- In the Claude desktop app, every Next line also comes as a question in the next-step box, with a
-  button that starts it.
+- In the Claude desktop app, every Next line also comes as a question in the next-step box. The
+  first button is the obvious yes: one click sends it and the agent starts.
 - In the Codex app, it can archive a finished session and its worktree for you, and turn a
   decision into choices you click.
 
