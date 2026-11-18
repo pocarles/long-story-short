@@ -23,7 +23,7 @@ happened, what it means for them, and what saying yes will do.
 <what it means for them: what they can do now, what is at risk or not checked, 1 or 2 sentences,
 or short bullets for 3+ items>
 
-**Next:** <one task>. <why it comes now, and what saying yes changes for them>.
+**Next:** <one task you will do>. <what they get once it is done>. <what saying yes will not do yet>.
 ```
 
 - Keep it short enough to take in at a glance, usually a handful of lines.
@@ -66,22 +66,60 @@ or short bullets for 3+ items>
 
 ## Next
 
-- One task, never a menu: the one that follows most naturally from what was just done.
-- Always say why it comes now, and what saying yes changes for the user: what will happen, and
-  anything that will not happen yet ("Nothing reaches the team until you say so").
-- Never propose work the current request still owes. Do it first. The block is not a way to stop
-  early.
+The Next line is the part the user acts on, so it gets the most care. A weak one costs them a
+round trip: they have to ask "why?", "is that all?" or "so what do we do?" before they can say
+yes. A strong one is the step they would have picked themselves, ready to approve.
+
+### Pick the step
+
+- **Start from what the user is trying to get**, not from what you just touched. Ask what still
+  stands between them and that result. Next is the biggest part of it that can start now.
+- **Not the nearest chore.** One more check, a tidy-up or a small polish is Next only when it is
+  truly what blocks the result. If the work is ready, Next is making it real: live, sent, used.
+- **One task, taken as far as it can go without them.** "Fix it, test it and put it up for
+  review" is one task. Run it to the first point where they are needed again. Never a step so
+  small that they must say "Do it" again five minutes later, and never a menu.
+- **You do it.** Next is the user's job only when nobody else can do it: a password, a
+  signature, a matter of taste. Then give that one action, and say what you do the moment it is
+  done.
+- **Do first what needs no yes.** Work the current request still owes, and anything you are
+  allowed to do without asking, gets done before the block is written. Next is for what needs
+  their approval. The block is not a way to stop early.
+
+### Word it
+
+- **The action first, in words that stand alone.** No "the plan above", "option 2" or "steps 1
+  to 7": they have not read above.
+- **Then the payoff:** what they get once it is done, in their terms ("Revenue then shows the
+  right total"). If you can't name a payoff worth their yes, you picked the wrong step.
+- **Then the limits:** what saying yes will not do yet ("Nothing reaches the team until you say
+  so"). When it is more than a few minutes of work, say how big it is.
 - "Do it" approves the Next line exactly as written. If it includes a step that needs explicit
   approval (merging, deploying to production, touching production data, sending or publishing,
   spending money), name that step plainly, e.g. "make it live for every customer".
-- If the work is blocked on a decision only the user can make, Next is that decision, worded so
-  "Do it" means your recommended answer.
-- Task finished and nothing left to do? Next is "archive this session", but only when nothing
-  would be lost: every change committed, no PR or branch waiting on this session, nothing
-  running in the background. Otherwise, Next is whatever makes it safe to close.
-- Answered a question mid-conversation with nothing to do next? Leave the Next line out.
+
+### When there is no plain task
+
+- **A decision only the user can make:** Next is your recommended answer, written as what you
+  will do, with the one reason and what the other choice would mean. "Do it" then means your
+  recommendation. Never an open question: "tell me whether…" can't be answered with "Do it".
+- **Waiting on something** (a date, a delivery, numbers that are not in yet): "wait" is not a
+  Next. Say what you are waiting for and until when. Next is what you will do when it arrives,
+  with its date, or the most useful thing to do meanwhile.
+- **Finished, and nothing left worth doing:** say plainly that it is finished. Next is "archive
+  this session", but only when nothing would be lost: every change committed, no PR or branch
+  waiting on this session, nothing running in the background. Otherwise, Next is whatever makes
+  it safe to close.
+- **Answered a question mid-conversation with nothing to do next?** Leave the Next line out.
 - Never propose deleting a session.
 - Don't repeat a next task the user declined unless new evidence makes it important.
+
+### Test it before sending
+
+- If they reply "Do it" and come back in an hour, do they find what they wanted, or one more
+  small step to approve?
+- Could they say yes without reading anything above?
+- Would they need to ask "why?", "is it worth it?" or "what should we do?" If so, rewrite it.
 
 ## Examples
 
@@ -135,6 +173,45 @@ Easy to read:
 ```
 **Next:** fix the price of the Dupont order. The app lists it about €8k below its invoice, so
 Revenue shows too little. Nothing else changes.
+```
+
+A weak Next asks a question, so "Do it" has no meaning:
+
+```
+**Next:** tell me whether the Dupont order counts as delivered or only invoiced.
+```
+
+The same decision, ready to approve:
+
+```
+**Next:** count the Dupont order as delivered, since the delivery note is signed. Revenue then
+includes it. If you would rather wait for the payment, say so and I leave it out.
+```
+
+A weak Next stops one small step short:
+
+```
+**Next:** run the tests on the fix.
+```
+
+Taken as far as it can go without them:
+
+```
+**Next:** make the fix live for every customer. It is tested and reviewed, and it stops the
+blank screen people get after a long break. Nothing else changes.
+```
+
+A weak Next waits:
+
+```
+**Next:** keep holding until the speed numbers are in.
+```
+
+Said as what will happen:
+
+```
+**Next:** on Thursday morning I read the speed numbers and tell you whether the change is worth
+keeping. They need two more days to mean anything. Nothing changes for anyone until then.
 ```
 
 ## When to skip it
