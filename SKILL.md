@@ -123,8 +123,8 @@ they would have picked themselves, ready to approve.
 - **Waiting on something** (a date, a delivery, numbers not in yet): "wait" is not a Next. Say
   what you are waiting for and until when, and what you will do when it arrives.
 - **Finished, nothing left worth doing:** say plainly that it is finished. Next is whatever makes
-  it safe to close (work saved and shared, nothing waiting for review on this session's own
-  copy, nothing left running), then "archive this session" once nothing would be lost. Never propose deleting a session.
+  it safe to close (work saved and shared, nothing waiting for review, nothing left
+  running), then "archive this session" once nothing would be lost. Never propose deleting a session.
 - **A question answered, nothing to do next:** leave Next out.
 - Don't offer again a step they turned down unless something new makes it matter.
 
@@ -158,8 +158,9 @@ Next must be one tap to approve wherever the app allows it.
   archiving and this task made a worktree, archive it with `archive_worktree` first, then the
   thread with `set_thread_archived`, no thread id.
 - **Chat apps and bots with question cards:** the card replaces the written Next line. Send the
-  reply (and the block) first, then one card: Next as the question, the yes as the first option
-  worded like their reply ("Yes, make it live"), plus at most one real alternative.
+  reply (with the block, unless it is short) first, then one card: Next as the question, the yes
+  as the first option worded like their reply ("Yes, make it live"), plus at most one real
+  alternative.
 - **No buttons** (terminal, Slack, email, SMS): the last line is
   `**Next:** <step>. Say yes to go.`
 
