@@ -93,7 +93,7 @@ Then upload the zip in Settings, under Capabilities, Skills.
 **Always on.** Add this line to your instructions file (`CLAUDE.md`, `AGENTS.md` or `GEMINI.md`):
 
 ```markdown
-**Every substantive reply follows the long-story-short skill**: a few plain lines, then the block and one next step (load the `long-story-short` skill for the format).
+**Every substantive reply follows the long-story-short skill**: a few plain lines, then the block and one next step; short replies skip the block but keep the next step (load the `long-story-short` skill for the format).
 ```
 
 ## Good to know
@@ -104,7 +104,7 @@ Then upload the zip in Settings, under Capabilities, Skills.
 - The block follows your language. Write in French, get it in French.
 - In the Claude desktop app, every Next line also comes as a question in the next-step box, even
   when the task is done. The first button is the obvious yes: one click sends it and the agent
-  starts. Elsewhere, the Next line ends with "Say yes to go."
+  starts. Where there are no buttons, the Next line ends with "Say yes to go."
 - In the Codex app, it can archive a finished session and its worktree for you, and turn a
   decision into choices you click.
 

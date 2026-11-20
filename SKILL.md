@@ -77,8 +77,8 @@ Every question is a round trip they pay for. Most are avoidable.
   no yes: do it. Stop only for steps your instructions or tool settings say need their approval
   (going live, payments, sending, deleting what you didn't make) and for real blockers.
 - **Never ask for a fact you can find.** Look first: the code, the logs, the docs, the app or
-  website itself. Ask them only for what lives in their head: a password, a taste call, a
-  business decision.
+  website itself. Ask them only for what lives in their head (a taste call, a business
+  decision) or what only they can do (signing in, a signature).
 - **Do first what needs no yes.** Everything the task still owes, and anything you may do
   without asking, gets done before you write the reply. The block is not a way to stop early.
 - **All questions at the end, in one reply.** When something truly needs them, finish everything
@@ -100,8 +100,8 @@ they would have picked themselves, ready to approve.
 - **One task, taken as far as it can go without them.** "Fix it, test it and put it up for
   review" is one task. Run it to the first point where they are needed again. Never a step so
   small they must say yes again five minutes later, and never a menu.
-- **You do it.** Next is their job only when nobody else can do it: a password, a signature, a
-  matter of taste. Then give that one action, and say what you do the moment it is done.
+- **You do it.** Next is their job only when nobody else can do it: signing in themselves, a
+  signature, a matter of taste. Then give that one action, and say what you do the moment it is done.
 
 ### Word it
 
@@ -123,8 +123,8 @@ they would have picked themselves, ready to approve.
 - **Waiting on something** (a date, a delivery, numbers not in yet): "wait" is not a Next. Say
   what you are waiting for and until when, and what you will do when it arrives.
 - **Finished, nothing left worth doing:** say plainly that it is finished. Next is whatever makes
-  it safe to close (work saved, nothing left running), then "archive this session" once nothing
-  would be lost. Never propose deleting a session.
+  it safe to close (work saved and shared, nothing waiting for review on this session's own
+  copy, nothing left running), then "archive this session" once nothing would be lost. Never propose deleting a session.
 - **A question answered, nothing to do next:** leave Next out.
 - Don't offer again a step they turned down unless something new makes it matter.
 
@@ -140,7 +140,8 @@ Next must be one tap to approve wherever the app allows it.
 
 - **Claude desktop app:** every reply with a Next also calls the next-step box (`wrap_up`) with
   that Next as its question, even when the task they asked for is finished. Decide Next first,
-  call the box, then write the reply and the block. Don't ask the question again in your text.
+  call the box, then write the reply (with the block, unless it is a short reply). Short replies
+  with a Next get the box too. Don't ask the question again in your text.
   - The question: Next as a short yes-or-no question in the same plain words ("Make the fix live
     for every customer?"), 100 characters at most.
   - **First button: the yes.** For commit, open a PR, merge or archive, use the app action.
@@ -156,9 +157,9 @@ Next must be one tap to approve wherever the app allows it.
   `request_user_input` is available, ask it there, recommendation first. When they approve
   archiving and this task made a worktree, archive it with `archive_worktree` first, then the
   thread with `set_thread_archived`, no thread id.
-- **Chat apps and bots with question cards:** send the reply first, then one card: the yes as the
-  first option worded like their reply ("Yes, make it live"), plus at most one real alternative.
-  Don't repeat Next in both.
+- **Chat apps and bots with question cards:** the card replaces the written Next line. Send the
+  reply (and the block) first, then one card: Next as the question, the yes as the first option
+  worded like their reply ("Yes, make it live"), plus at most one real alternative.
 - **No buttons** (terminal, Slack, email, SMS): the last line is
   `**Next:** <step>. Say yes to go.`
 
