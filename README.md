@@ -7,10 +7,9 @@ call. That's the real bottleneck.
 So how do you get a lot more done without draining your mental energy, or being exhausted after a
 few hours?
 
-I designed Long story short for exactly that. The agent ends every real reply with ten plain lines
-at most, often fewer: where things stand, then the one next step it would take. I read those
-lines, decide, and answer "Do it" when I agree. When I need to go deeper before deciding, the full
-reply is still right above.
+I designed Long story short for exactly that. The agent answers in a few plain lines, then ends
+with a short block: where things stand, then the one next step it would take. I read it, decide,
+and tap yes when I agree. When I need to go deeper before deciding, I ask for the details.
 
 It changed how I work. I used to start struggling beyond five or six parallel sessions. With this
 skill, I go up to fifteen before I hit my limits again, and my mental fatigue is mostly under
@@ -35,10 +34,13 @@ It looks like this:
   the whole reply.
 - **Explained, not reported.** Like a colleague over coffee: what happened, what it means for you,
   in short sentences with no codes or jargon. Anything risky or unchecked stays in the summary.
-- **One next step, not a menu.** You don't pick between five options. "Do it" is enough to keep
-  going.
-  The line says why it comes now and what saying yes will change.
-- **Your "Do it" means what you think it means.** If the next step deploys to production, sends an
+- **Short all the way down.** The reply above the block is a few lines too, never past one phone
+  screen. Details come when you ask for them.
+- **One next step, not a menu.** You don't pick between five options. A yes is enough to keep
+  going. The line says why it comes now and what saying yes will change.
+- **Fewer questions.** No "should I continue?" in the middle of a task, and no asking you for
+  facts the agent can look up itself.
+- **Your yes means what you think it means.** If the next step deploys to production, sends an
   email or spends money, the line says so before you approve it.
 - **No stopping halfway.** If the agent still owes you work, it does that work first. The block
   can't become a polite way to quit early.
@@ -49,7 +51,7 @@ It looks like this:
 
 This skill works because models have become really good at judging what comes next. With a weak
 model, the suggested next step can be plain dumb. Don't trust it blindly: read the Next line
-before you say "Do it", and read the details when something looks off.
+before you say yes, and read the details when something looks off.
 
 ## Install it
 
@@ -65,8 +67,8 @@ tool, and tells you how to undo it.
 **On call** means it runs when you ask. Type `/long-story-short` in Claude Code, or
 `$long-story-short` in Codex, and you get the block for the whole session.
 
-**Always on** is where it pays off. Every substantive reply ends with the block, and short replies
-stay short. It takes one line in your agent's instructions file, which the install adds for you.
+**Always on** is where it pays off. Every substantive reply is short and ends with the block, and
+replies of a few lines skip it. It takes one line in your agent's instructions file, which the install adds for you.
 
 ### Or do it yourself
 
@@ -91,17 +93,18 @@ Then upload the zip in Settings, under Capabilities, Skills.
 **Always on.** Add this line to your instructions file (`CLAUDE.md`, `AGENTS.md` or `GEMINI.md`):
 
 ```markdown
-**End every substantive reply with the long-story-short block** (load the `long-story-short` skill for the format).
+**Every substantive reply follows the long-story-short skill**: a few plain lines, then the block and one next step (load the `long-story-short` skill for the format).
 ```
 
 ## Good to know
 
 - The skill is one short file, [SKILL.md](SKILL.md). Read it before you install it.
-- "Do it" approves the Next line as written, nothing more. The skill gives your agent no new
+- A yes approves the Next line as written, nothing more. The skill gives your agent no new
   permissions: your tool's own settings still decide what it may do.
 - The block follows your language. Write in French, get it in French.
-- In the Claude desktop app, every Next line also comes as a question in the next-step box. The
-  first button is the obvious yes: one click sends it and the agent starts.
+- In the Claude desktop app, every Next line also comes as a question in the next-step box, even
+  when the task is done. The first button is the obvious yes: one click sends it and the agent
+  starts. Elsewhere, the Next line ends with "Say yes to go."
 - In the Codex app, it can archive a finished session and its worktree for you, and turn a
   decision into choices you click.
 

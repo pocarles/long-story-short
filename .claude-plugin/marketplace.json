@@ -8,8 +8,8 @@
   "plugins": [
     {
       "name": "long-story-short",
-      "description": "Ends your agent's replies with a few plain lines on where things stand and the one next step.",
-      "version": "1.4.0",
+      "description": "Short, plain replies that end with where things stand and the one next step, ready to approve with one tap.",
+      "version": "2.0.0",
       "author": {
         "name": "Pierre-Olivier Carles",
         "url": "https://github.com/pocarles"
